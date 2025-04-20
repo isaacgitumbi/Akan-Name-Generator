@@ -1,0 +1,45 @@
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Akan Name Generator</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+
+    <body>
+        <h1>Akan Name Generator</h1>
+    
+    <p>This application calculates users' birthday based on their birthdate and assigns them the corresponding Akan name.
+    </p>
+    <p>Enter your birthdate below to find your name.</p>
+    <div id="result"></div>
+    <section>
+        <form id="akanForm">
+            <label for="dob"><b>Date of Birth:</b></label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="gender"><b>Gender:</label></b></label>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </div>
+            <button type="submit">Get Akan Name</button>
+    
+        </form>
+     </section>
+     <section>
+            <div id="error" class="error">
+                 <h2>Akan Name:</h2>
+                 <p id="akanName"></p>
+                 <p id="akanDay"></p>
+                 <p id="akanGender"></p>
+            </div>
+            <!-- The Akan name will be placed over here -->
+    </section>
+    <script src = "./index.js"></script>
+    </body>
+    </html>
